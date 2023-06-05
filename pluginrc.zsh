@@ -8,8 +8,7 @@ plugins=(git vi-mode fzf mongocli gitignore kubectl kubectx z fd catimg colorize
 
 KEYTIMEOUT=1
 
-./fzf/install --bin
-export PATH=$CURR_DIR/fzf/bin:$PATH
+export PATH=$CURR_DIR/bin:$PATH
 
 if which exa &> /dev/null; then
     alias ls="exa --icons -@mF --git"

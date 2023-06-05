@@ -2,10 +2,14 @@
 # Put here your functions, environment variables, aliases and whatever you need.
 
 CURR_DIR="$(cd "$(dirname "$0")" && pwd)"
+plugin_name="xxh-plugin-zsh-zshrc"
 
 plugins=(git vi-mode fzf mongocli gitignore kubectl kubectx z fd catimg colorize emoji fasd grunt gulp helm ripgrep rsync sudo)
 
 KEYTIMEOUT=1
+
+./fzf/install --bin
+export PATH=$CURR_DIR/fzf/bin:$PATH
 
 if which exa &> /dev/null; then
     alias ls="exa --icons -@mF --git"

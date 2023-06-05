@@ -16,7 +16,7 @@ done
 rm -rf $build_dir
 mkdir -p $build_dir
 
-for f in pluginrc.zsh
+for f in pluginrc.zsh p10k.zsh
 do
     cp $CDIR/$f $build_dir/
 done

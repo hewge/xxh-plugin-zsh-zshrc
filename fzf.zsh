@@ -118,7 +118,3 @@ bindkey -M viins '^R' fzf-history-widget
   eval $__fzf_key_bindings_options
   'unset' '__fzf_key_bindings_options'
 }
-
-
-echo "$(pwd): "
-echo "RUNNING FZF KEY BINDINGS"

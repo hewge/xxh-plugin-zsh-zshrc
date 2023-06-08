@@ -23,6 +23,6 @@ fi
 [[ ! -f $CURR_DIR/p10k.zsh ]] || source $CURR_DIR/p10k.zsh
 [[ ! -f $CURR_DIR/fzf.zsh ]] || source $CURR_DIR/fzf.zsh
 
-bindkey -v viins '^F' forward-char
+bindkey -v '^F' forward-char
 
 source $ZSH/oh-my-zsh.sh
